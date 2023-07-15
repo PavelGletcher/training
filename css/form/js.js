@@ -1,13 +1,6 @@
-const openPopUp = document.querySelector('btn--login');
-const closePopUp = document.querySelector('btn--login');
-const PopUp = document.querySelector('wrapper');
-
-
-/*
-openPopUp.addEventListener('click', function(e){
-  e.preventDefault();
-  PopUp.classList.add ('active');
+document.querySelector('.btn--login').addEventListener('click', function(){
+  document.querySelector('.wrapper').classList.add('wrapper-open')
 })
-closePopUp.addEventListener('click', () => {
-  PopUp.classList.remove('active')
+document.querySelector('.wrapper-close_img').addEventListener('click', function(){
+  document.querySelector('.wrapper').classList.remove('wrapper-open')
 })
