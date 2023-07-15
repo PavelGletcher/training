@@ -30,19 +30,22 @@ header {
   color: #b6ddff;
 }
 
-.header--navigation a::before {
+.header--navigation a::after {
 content: '';
 position: absolute;
 height: 2px;
 width: 100%;
 background-color: #0080f1;
 border-radius: 8px;
+left: 0;
 bottom: -6px;
-transform: scale(0);
-transition: 0.3s ease;
+transition: transform .6s;  /*без transform не сработает*/
+transform-origin: right;
+transform: scaleX(0); /*ИСК БЛИН!*/
 }
-.header--navigation a:hover::before{
-  transform: scale(1);
+.header--navigation a:hover::after{
+  transform-origin: left;
+  transform: scaleX(1); 
 }
 
 .btn--login {
@@ -53,11 +56,12 @@ transition: 0.3s ease;
   border: solid 2px aliceblue;
   color: aliceblue;
   cursor: pointer;
-  transition: 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out;
+  
   text-transform: uppercase;
 }
 .btn--login:hover{
-  transition: 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out;
   background-color: aliceblue;
   color: #232323;
 }
