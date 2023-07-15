@@ -14,5 +14,33 @@ if (y > 0){
 //ЗАДАЧА 2
 //Дана строка. Выведите в консоль длину этой строки.
 //var x = Math.random()* 10; y = String(Math.trunc(x)); // рандом + >0.0 + убрать 0,0 + перевод в строку
+//var r = "1231243214qwefqwfewrfwerfewrfwerf";
+//console.log ("Длина строки: " + r.length)
+
+
+//ЗАДАЧА 3
+//Дана строка. Выведите в консоль последний символ строки.
+/*
 var r = "1231243214qwefqwfewrfwerfewrfwerf";
-console.log ("Длина строки: " + r.length)
+var last = r.length - 1;
+console.log ("Последний символ строки: " + r[last]);
+
+//ЗАДАЧА 4
+//Дано число. Проверьте, четное оно или нет.
+var x = Math.random()* 10; y = Math.trunc(x);
+if (y % 2 == 0){
+  console.log ("Четное: " + y);
+} else {
+  console.log ("Не четное: " + y);
+}
+//ЗАДАЧА 5
+//Дано слово. Получите его последнюю букву. Если слово заканчивается на мягкий знак, то получите предпоследнюю букву.
+var word = 'Монокль';
+var last = word.length - 1;
+if (word[last] == 'ь'){
+  last = word.length - 2;
+  console.log (word[last]);
+} else if (word[last] != 'ь'){
+  console.log (word[last]);
+}
+*/
