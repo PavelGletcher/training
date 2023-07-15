@@ -90,6 +90,10 @@ transform: scaleX(0); /*ИСК БЛИН!*/
   background-color: transparent;
   backdrop-filter: blur(20px);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.267);
+  transition: .3s ease-in-out;
+}
+.wrapper.active {
+  display: block;
 }
 
 input {
