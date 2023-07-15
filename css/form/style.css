@@ -3,20 +3,31 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 body {
-  background-color: #232323;
+  background: url(/css/form/high-angle-animals-day-arrangement.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 header {
-  padding: 1% 5% 0 5%;
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 99;
 }
 .logo {
-  font-size: 60px;
+  font-size: 30px;
   color: aliceblue;
 }
 .header--navigation a {
@@ -33,9 +44,9 @@ header {
 .header--navigation a::after {
 content: '';
 position: absolute;
-height: 2px;
+height: 4px;
 width: 100%;
-background-color: #0080f1;
+background-color: #00e3a6;
 border-radius: 8px;
 left: 0;
 bottom: -6px;
@@ -56,12 +67,59 @@ transform: scaleX(0); /*ИСК БЛИН!*/
   border: solid 2px aliceblue;
   color: aliceblue;
   cursor: pointer;
-  transition: background 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
   
   text-transform: uppercase;
 }
 .btn--login:hover{
-  transition: background 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
   background-color: aliceblue;
-  color: #232323;
+  color: #002c21;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 30vh;
+  min-width: 25vw;
+  border-radius: 25px;
+  border: solid 2px #b6ddff;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.267);
+}
+
+input {
+  text-align: center;
+  margin: 25px 10px 25px 10px;
+  border: solid 1px white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+input:focus {
+  outline: none;
+  border: solid 2px #ffffff;
+}
+
+.auth-btn {
+  background: transparent;
+  padding: 7px 30px;
+  width: 100%;
+  border-radius: 10px;
+  border: solid 2px aliceblue;
+  color: aliceblue;
+  cursor: pointer;
+  transition: background 0.4s ease-in-out;
+  text-transform: uppercase;
+}
+
+.auth-btn:hover{
+  transition: 0.4s ease-in-out;
+  background-color: aliceblue;
+  color: #002c21;
 }
