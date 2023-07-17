@@ -31,7 +31,7 @@ function onClickbutton(el) {
   console.log (el.name); // вывод значения с атрибута
 }
 */
-
+/*
 //ПОЛУЧЕНИЕ ДАННЫХ С ЭКРАНА
 function onClickbutton(el){
   if (el.value == "hello") {
@@ -42,3 +42,14 @@ function onClickbutton(el){
 
 //el.style.background = "red" - обращение к css свойству el.style
 //el.style.cssText = "Border-radius: 5px; background-color: red" - обращение к css для работы как в файле
+*/
+/*
+function m() {
+  alert ('A');
+  m.innerHTML = ('Слово');
+}
+
+document.querySelector ('.btn').addEventListener ('click', m);
+*/
+
+
