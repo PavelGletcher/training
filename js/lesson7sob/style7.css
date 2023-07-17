@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(35, 35, 35);
+  box-sizing: border-box;
+}
+.btn {
+  background-color: aquamarine;
+  color: black;
+  padding: 100px 250px;
+  font-size: 50px;
+  border-radius: 25px;
+  border: solid 3px whitesmoke;
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+  transform: scale(1);
+  z-index: 99;
+  transition: 0.2s;
+}
+.btn:hover {
+  background-color: whitesmoke;
+}
+.open {
+  transform: scale(1);
+  transition: 0.2s;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
