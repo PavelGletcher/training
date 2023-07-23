@@ -21,18 +21,16 @@
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 5px;
     
 }
 
 .slider--item {
-    width: 100vw; height: 40vh;
+    width: 200%; height: 40vh;
     background-color: aliceblue;
     border-radius: 25px;
     border: solid 2px black;
-    
     transition: 0.4s;
+    text-align: center;
 }
 .slider--btn {
 position: absolute;
@@ -42,7 +40,7 @@ transform: translateX(-50%);
 }
 
 .slider--btn--left, .slider--btn--right {
-    width: 2vw; height: 2vh;
+    width: 4vw; height: 2vh;
     cursor: pointer;
     background-color: aliceblue;
     border-radius: 7px;
@@ -53,8 +51,5 @@ transform: translateX(-50%);
 
 .slider--btn--left:hover, .slider--btn--right:hover {
     background-color: black;
-}
-.slider--btn--left:focus, .slider--btn--right:focus {
-    background-color: blue;
 }
 
