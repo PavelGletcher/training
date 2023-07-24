@@ -2,10 +2,12 @@
     margin: 0;
     bottom: 0;
     box-sizing: border-box;
-    
+
 }
+
 img {
-    width: 100%; height: 100%;
+    width: 100%;
+    height: 100%;
 
 }
 
@@ -14,7 +16,7 @@ main {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
+
 }
 
 h1 {
@@ -27,27 +29,32 @@ h1 {
 }
 
 .slider--box {
-    width: 50vw; height: 50vh;
+    width: 50vw;
+    height: 50vh;
     background-color: rgb(57, 57, 57);
     border-radius: 25px;
     box-shadow: 0px 0px 15px -10px;
     position: relative;
     overflow: hidden;
-    
+
 
 }
+
 .slider--line {
     background-color: aliceblue;
-    width: 400%; height: 100%;
+    width: 400%;
+    height: 100%;
     display: flex;
     align-items: center;
     transition: 0.5s;
-    
+
 }
+
 .slider--item {
     background-color: blueviolet;
     border-radius: 15px;
-    width: 100%; height: 100%;
+    width: 100%;
+    height: 100%;
     background-image: url(https://images.unsplash.com/photo-1689250088664-0ee0c721d0b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,9 +65,11 @@ h1 {
 .slider--item:nth-child(2) {
     background-image: url(https://images.unsplash.com/photo-1669940812749-0a0fa4b92ba4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80://images.unsplash.com/photo-1689250088664-0ee0c721d0b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
 }
+
 .slider--item:nth-child(3) {
     background-image: url(https://images.unsplash.com/photo-1685208711000-0946e951f651?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80);
 }
+
 .slider--item:nth-child(4) {
     background-image: url(https://images.unsplash.com/photo-1686468117025-25e6fa62e826?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80);
 }
@@ -79,31 +88,36 @@ h1 {
     cursor: pointer;
     color: rgb(57, 57, 57);
 }
+
 .sldbtn:hover {
     background-color: rgb(57, 57, 57);
     color: aliceblue;
     transform: scale(1.1);
 }
+
 .sldbtn:active {
     color: blueviolet;
 }
 
 
-.slider--dot{
+.slider--dot {
     cursor: pointer;
     position: absolute;
-    width: 150px; height: 30px;
+    width: 150px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     bottom: 21%;
-    
+
 
 }
+
 .slider--dot--item {
     cursor: pointer;
-    width: 15px; height: 15px;
+    width: 15px;
+    height: 15px;
     background-color: rgb(161, 161, 161);
     box-shadow: 0px 0px 15px -10px;
     border-radius: 100%;
@@ -112,7 +126,9 @@ h1 {
     z-index: 1;
     transform: scale(0.8);
 }
+
 .slider--dot--item:hover {
     transform: scale(1);
-    background-color: rgb(57, 57, 57);;
+    background-color: rgb(57, 57, 57);
+    ;
 }
