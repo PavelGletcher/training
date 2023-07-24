@@ -58,6 +58,12 @@ h1 {
     background-image: url(https://images.unsplash.com/photo-1689250088664-0ee0c721d0b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.slider--item:hover {
+    transform: scale(1.2);
+    
 }
 
 
@@ -114,7 +120,7 @@ h1 {
 
 }
 
-.slider--dot--item {
+.slider--dot--item, .slider--dot--item2, .slider--dot--item3, .slider--dot--item4 {
     cursor: pointer;
     width: 15px;
     height: 15px;
@@ -127,7 +133,7 @@ h1 {
     transform: scale(0.8);
 }
 
-.slider--dot--item:hover {
+.slider--dot--item:hover, .slider--dot--item2:hover, .slider--dot--item3:hover, .slider--dot--item4:hover {
     transform: scale(1);
     background-color: rgb(57, 57, 57);
     ;
