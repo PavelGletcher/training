@@ -63,6 +63,7 @@ h1 {
 }
 .slider--item:hover {
     transform: scale(1.2);
+    filter:brightness(50%)
     
 }
 
